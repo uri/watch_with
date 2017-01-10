@@ -22,8 +22,15 @@ import "phoenix_html"
 //
 
 
-import Player from "./player"
+import Room from "./room"
 
-let videoDom = document.getElementById("player");
-let videoId = "doesn't matter yet"
-Player.init(videoDom, videoId);
+let roomDom = document.getElementById("room");
+if (roomDom) {
+  let messageLog = document.getElementById("event-stream");
+  if (messageLog) {
+    Room.setLogging(messageLog);
+  }
+
+  let roomId = roomDom.getAttribute("data-room-id");
+  Room.init(roomId);
+}

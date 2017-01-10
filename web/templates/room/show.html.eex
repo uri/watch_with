@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-sm-12">
+    <h1>Share this link with your enemies</h1>
+  </div>
+</div>
+
+<div id="room" data-room-id="<%= @room_id %>">
+  <div class="row">
+    <div class="col-sm-12">
+      <input type="text" class="form-control form-control-lg" value="<%= room_url(@conn, :show, @room_id)%>">
+    </div>
+  </div>
+
+  <%# Player row %>
+  <div class="row" style="padding-top: 1.2em">
+    <div class="col-sm-12 embed-responsive embed-responsive-16by9">
+      <div id="player" data-room-id="<%= @room_id %>" data-video-id="<%= video_id(@video_url) %>"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12"><hr></div>
+    <div class="col-md-6">
+      <ul id="event-stream">
+      </ul>
+    </div>
+  </div>
+
+</div>

@@ -2,7 +2,7 @@ defmodule WatchWith.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", WatchWith.RoomChannel
+  channel "room:*", WatchWith.RoomChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket

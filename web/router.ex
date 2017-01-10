@@ -17,6 +17,10 @@ defmodule WatchWith.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+
+    get "/rooms", RoomController, :index
+    get "/rooms/:room_id", RoomController, :show
+    post "/rooms", RoomController, :create
   end
 
   # Other scopes may use custom stacks.

@@ -12,6 +12,7 @@ defmodule WatchWith do
       supervisor(WatchWith.Endpoint, []),
       # Start your own worker by calling: WatchWith.Worker.start_link(arg1, arg2, arg3)
       # worker(WatchWith.Worker, [arg1, arg2, arg3]),
+      worker(WatchWith.RoomManager, [])
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
