@@ -13,7 +13,7 @@ class MessageLog {
   info (message) {
     this.messageLog.push(message);
     if (this.channel) {
-      this.channel.push("new_message", %{msg: message})
+      this.channel.push("new_message", {msg: message})
     }
     if(this.messageLogDom) {
       let el = document.createElement("li");
