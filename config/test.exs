@@ -2,7 +2,7 @@ use Mix.Config
 
 # We don't run a server during test. If one is required,
 # you can enable the server option below.
-config :watch_with, WatchWith.Endpoint,
+config :watch_with, WatchWithWeb.Endpoint,
   http: [port: 4001],
   server: false
 

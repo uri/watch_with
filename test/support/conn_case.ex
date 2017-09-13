@@ -1,4 +1,4 @@
-defmodule WatchWith.ConnCase do
+defmodule WatchWithWeb.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -20,10 +20,10 @@ defmodule WatchWith.ConnCase do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
 
-      import WatchWith.Router.Helpers
+      import WatchWithWeb.Router.Helpers
 
       # The default endpoint for testing
-      @endpoint WatchWith.Endpoint
+      @endpoint WatchWithWeb.Endpoint
     end
   end
 

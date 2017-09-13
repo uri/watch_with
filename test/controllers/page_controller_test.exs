@@ -1,5 +1,5 @@
-defmodule WatchWith.PageControllerTest do
-  use WatchWith.ConnCase
+defmodule WatchWithWeb.PageControllerTest do
+  use WatchWithWeb.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

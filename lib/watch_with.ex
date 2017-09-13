@@ -9,7 +9,7 @@ defmodule WatchWith do
     # Define workers and child supervisors to be supervised
     children = [
       # Start the endpoint when the application starts
-      supervisor(WatchWith.Endpoint, []),
+      supervisor(WatchWithWeb.Endpoint, []),
       # Start your own worker by calling: WatchWith.Worker.start_link(arg1, arg2, arg3)
       # worker(WatchWith.Worker, [arg1, arg2, arg3]),
       worker(WatchWith.RoomManager, [])

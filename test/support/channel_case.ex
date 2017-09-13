@@ -1,4 +1,4 @@
-defmodule WatchWith.ChannelCase do
+defmodule WatchWithWeb.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -22,7 +22,7 @@ defmodule WatchWith.ChannelCase do
 
 
       # The default endpoint for testing
-      @endpoint WatchWith.Endpoint
+      @endpoint WatchWithWeb.Endpoint
     end
   end
 

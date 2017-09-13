@@ -6,11 +6,11 @@
 use Mix.Config
 
 # Configures the endpoint
-config :watch_with, WatchWith.Endpoint,
+config :watch_with, WatchWithWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "0TP/UfMWpzc692ZZhD18uOE0I0b1Dny1Yw7zcfrHqs6KuZ5S6c6zKW8ib2Bp8Qis",
-  render_errors: [view: WatchWith.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: WatchWith.PubSub,
+  render_errors: [view: WatchWithWeb.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: WatchWithWeb.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

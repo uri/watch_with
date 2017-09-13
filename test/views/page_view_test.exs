@@ -1,3 +1,3 @@
-defmodule WatchWith.PageViewTest do
-  use WatchWith.ConnCase, async: true
+defmodule WatchWithWeb.PageViewTest do
+  use WatchWithWeb.ConnCase, async: true
 end
