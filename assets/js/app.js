@@ -25,6 +25,7 @@ import "phoenix_html"
 import Room from "./room"
 
 let roomDom = document.getElementById("room");
+
 if (roomDom) {
   let messageLog = document.getElementById("event-stream");
   if (messageLog) {
